@@ -1473,7 +1473,7 @@ async def admin_callback(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
             await query.message.reply_text("😔 Promo-kodlar yo'q.")
             return
         lines = [
-            f"{'✅' if p[6] else '❌'} *{p[1]}* — {p[3]}{'%' if p[2]=='percent' else ' so'm'} "
+            f"{'✅' if p[6] else '❌'} *{p[1]}* — {p[3]}{'%' if p[2]=='percent' else ' som'} "
             f"({p[5]}/{p[4]} ta ishlatilgan)"
             for p in promos
         ]
